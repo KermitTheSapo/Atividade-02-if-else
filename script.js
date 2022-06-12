@@ -41,12 +41,10 @@ if (separaSilaba[0] == "R") {
 
 //5 - Criar uma condição que exiba uma mensagem no console se seu sobrenome tenha mais de 6 letras OU seu nome começar com a letra E
 
-let sobrenome = "Francisco"
-contaSobrenome = sobrenome.length
-separaSobrenome = sobrenome.split("")
-
-if (contaSobrenome >= 6 || separaSobrenome[0] == "e") {
-    console.log("Seu nome tem mais de 6 letras ou seu nome começa com a letra E")
-} else {
-    console.log("Seu nome não tem mais de 6 letras e não começa com a letra E")
+let nomeCompleto = "Fernanda Flores"
+let separaNomeSobrenome = nomeCompleto.split (" ")
+let contadorletrasNome = separaNomeSobrenome[0].split("")
+let contadorLetrasSobrenome = separaNomeSobrenome[1].length
+if (contadorLetrasSobrenome >= 6 || contadorletrasNome[0] == "E") {
+    console.log("Seu sobrenome tem mais de 6 letras ou começa com a letra E")
 }
